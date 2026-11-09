@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Arial, sans-serif ;
+    background: #f5f8f1;
+    color: #294b35;
+    min-height: 100vh;
+}
+
+
+input[type="radio"] {
+    display: none;
+  }
+  
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10x;
+    padding: 5px;
+    background: #2e7d32;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+.menu button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 32px;
+    background: #fff;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3S;
+}
+
+.menu button:hover {
+    background: #a5d6a7;
+  }
+
+  body:has(#halaman:target) .menu button[onclick="#beranda"],
+  body:has(#tentang:target) .menu button[onclick="#tentang"],
+  body:has(#materi:target) .menu button[onclick="#materi"],
+  body:has(#produk:target) .menu button[onclick="#produk"],
+  body:has(#anggota:target) .menu button[onclick="#anggota"],
+  body:has(#kontak:target) .menu button[onclick="#kontak"],
+  body:has(#beranda:target) .menu button[onclick="#beranda"] {
+    background: #2e7d32;
+    color: #fff;
+    border-color: #1b5e20;
+  }
+
+  .btn {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 32px;
+    background: #fff;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3S;
+  }
+
+  .btn :hover {
+    background: #a5d6a7;
+  }
+
+  .produk {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+.produk a {
+    text-decoration: none;
+    padding: 10px 24px;
+    background: #fff;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+.hero {
+    background: linear-gradient(rgba(35, 76, 54, 0.71), rgba(35, 76, 54, 0.71)), url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #b8dfa9;
+    color: #244d32;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 8%;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.judul h2 {
+    color: #34734a;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.about {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card, .product {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.09);
+    color: #294b35;
+    font-family: inherit;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card:hover, .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card:focus-visible, .product:focus-visible {
+    outline: 3px solid #34734a;
+    outline-offset: 3px;
+}
+
+.card h3 {
+    color: #34734a;
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+#analisis, #anggota {
+    background: #e7f0e2;
+}
+
+.product {
+    width: 220px;
+    font-weight: bold;
+}
+
+.product div {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.member {
+    width: 280px;
+}
+
+.member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.contact-box h3 {
+    color: #34734a;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    line-height: 2;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial;
+}
+
+form button {
+    background: #34734a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 99;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background: white;
+    max-width: 420px;
+    width: 100%;
+    padding: 28px;
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h3 {
+    color: #34734a;
+    margin-bottom: 12px;
+}
+
+.modal-content p {
+    line-height: 1.7;
+}
+
+.close {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    border: none;
+    background: #e7f0e2;
+    color: #285538;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-ok {
+    margin-top: 18px;
+    background: #34734a;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin: 6px;
+    }
+    .hero h2 {
+        font-size: 30px;
+    }
+    section {
+        padding: 35px 5%;
+    }
+    .card, .product, .member {
+        width: calc(50% - 10px);
+        min-width: 145px;
+        padding: 18px 12px;
+    }
+    .member img {
+        height: 140px;
+    }
+    .contact-box {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 380px) {
+    .card, .product, .member {
+        width: 100%;
+    }
+}
+
+input[type="radio"] {
+    display: none;
+  }
+  
+  .mapel-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 15px 0 20px;
+    }
+
+    .mapel-menu label {
+      padding: 8px 20px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border: 2px solid #66bb6a;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .mapel-menu label:hover {
+      background: #c8e6c9;
+    }
+
+    #m-mtk:checked ~ .mapel-menu label[for="m-mtk"],
+    #m-ing:checked ~ .mapel-menu label[for="m-ing"] {
+      background: #2e7d32;
+      color: #fff;
+      border-color: #2e7d32;
+    }
+
+    .mapel-isi {
+      display: none;
+    }
+
+    #m-mtk:checked ~ #isi-mtk,
+    #m-ing:checked ~ #isi-ing {
+      display: block;
+      animation: muncul 0.4s ease;
+    }
+
+    .mapel-isi h3 {
+      margin-bottom: 12px;
+      color: #2e7d32;
+    }
+
+    .penjelasan-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .penjelasan {
+      background: #f1f8e9;
+      border: 2px dashed #66bb6a;
+      border-radius: 12px;
+      padding: 18px;
+      align-self: start;
+    }
+
+    .penjelasan input[type="checkbox"] {
+      display: none;
+    }
+
+    .penjelasan label {
+      display: block;
+      cursor: pointer;
+    }
+
+    .penjelasan h4 {
+      margin-bottom: 4px;
+      color: #2e7d32;
+    }
+
+    .penjelasan small {
+      color: #66bb6a;
+    }
+
+    /* Teks penjelasan hanya tampil saat diklik */
+    .penjelasan p {
+      display: none;
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #a5d6a7;
+    }
+
+    .penjelasan input[type="checkbox"]:checked ~ p {
+      display: block;
+      animation: muncul 0.3s ease;
+    }
+
+    .penjelasan input[type="checkbox"]:checked ~ label small {
+      visibility: hidden;
+    }
+
+    @media (max-width: 600px) {
+      .penjelasan-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @keyframes muncul {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FOOTER */
+.footer {
+  background-color: #4d8250;
+  color: white;
+  padding: 40px 8% 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  margin-top: 30px;
+  padding-top: 15px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+  }
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart EcoCycle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+        <nav class="menu">
+            <button onclick="location.href='#beranda'">&#127968; Beranda</button>
+            <button onclick="location.href='#tentang'">&#8505; Tentang</button>
+            <button onclick="location.href='#materi'">&#128218; Materi</button>
+            <button onclick="location.href='#produk'">&#128230; Produk</button>
+            <button onclick="location.href='#anggota'">&#128101; Anggota</button>
+            <button onclick="location.href='#kontak'">&#9742; Kontak</button>
+        </nav>
+
+
+    <!-- Beranda / Hero Section -->
+    <div class="hero" id="beranda">
+        <h2>Welcome to Smart EcoCycle</h2>
+        <p>Roda Kreativitas, Aksi Nyata Peduli Lingkungan</p>
+        <a href="#tentang" class="btn">Mulai Sekarang</a>
+    </div>
+
+    <!-- Tentang Section -->
+    <section id="tentang">
+        <div class="judul">
+            <h2>Penjelasan EcoCycle</h2>
+            <p>Apa itu EcoCycle?</p>
+        </div>
+        <div class="about">
+            <p>
+                EcoCycle adalah konsep inovasi ramah lingkungan yang bertujuan untuk mengurangi limbah dengan cara mendaur ulang barang bekas menjadi produk baru yang memiliki nilai guna dan nilai jual. EcoCycle berasal dari kata Eco yang berarti lingkungan atau ekologi, dan Cycle yang berarti siklus atau daur ulang. EcoCycle mengajak masyarakat untuk lebih peduli terhadap lingkungan dengan memanfaatkan barang-barang yang sudah tidak terpakai menjadi produk kreatif dan bermanfaat. Dalam proyek EcoCycle, barang bekas seperti keyboard komputer dapat diolah menjadi pot tanaman dan kipas angin bekas dapat dikembangkan menjadi kipas angin smart. Dengan demikian, barang yang sebelumnya dianggap sebagai sampah dapat menjadi produk inovatif.
+            </p>
+        </div>
+    </section>
+
+    <!-- Analisis Produk Section -->
+    <section class="halaman" id="materi">
+        <h2>Materi</h2>
+        <p>Pilih mata pelajaran di bawah ini:</p>
+      
+        <input type="radio" name="mapel" id="m-mtk" checked>
+        <input type="radio" name="mapel" id="m-ing">
+      
+        <div class="mapel-menu">
+          <label for="m-mtk">Matematika</label>
+          <label for="m-ing">Bahasa Inggris</label>
+        </div>
+      
+        <!-- Matematika -->
+        <div class="mapel-isi" id="isi-mtk">
+          <h3>Matematika</h3>
+          <div class="penjelasan-wrap">
+            <div class="penjelasan">
+              <input type="checkbox" id="p-mtk1">
+              <label for="p-mtk1"><h4>Andika Surya Pratama</h4>
+                <div style="text-align: center;">
+                    <img src="dikamtk.jpeg"
+                    alt="Poster Iklan"
+                    width="60%"
+                    height="130%">
+                </div>
+                <small>Klik untuk membuka</small></label>
+              <p><p>
+                1. Pemisalan Variabel <br>
+                    - x = harga satu pot dari keyboard bekas<br>
+                    - y = harga satu rak serbaguna dari casing<br>
+            </p>
+            <p>
+                2. Membuat model matematika <br>
+                    - Paket 1: 5 pot keyboard dan 3 rak casing pc Rp165.000 <br>
+                    - Paket 2: 5 pot keyboard dan 2 rak casing pc Rp135.000 <br>
+                    Maka diperoleh: <br>
+                    5x + 3y = 165.000 (1) <br>
+                    5x + 2y = 135.000 (2) <br>
+            </p>
+            <p>
+                3. Menentukan harga masing-masing produk dengan metode campuran <br><br>
+                    a. Eliminasi y <br>
+                        5x + 2y = 165.000 |×3| <br>
+                        5x + 3y = 135.000 |×2| <br>
+                        15x + 6y = 405.000 <br>
+                        10x + 6y = 330.000  <br>
+                        ___________________ - <br>
+                        5x = 75.000 <br>
+                        x = 75.000 : 5 <br>
+                        x = 15.000 <br><br>
+            
+                    b. Substitusi <br>
+                        x = 15.000 (masuk ke persamaan 1) <br>
+                        5x + 2y = 135.000 <br>
+                        5(15.000) + 2y = 135.000 <br>
+                        75.000 + 2y = 135.000 <br>
+                        2y = 135.000 - 75.000 <br>
+                        2y = 60.000 <br>
+                        y = 60.000 : 2 <br>
+                        y = 30.000 <br>
+            </p>
+            <p>
+                4. Kesimpulan <br>
+                    - Harga 1 pot dari keyboard bekas = Rp15.000 <br>
+                    - Harga 1 rak serbaguna dari casing = Rp30.000<br>
+            </p></p>
+            </div>
+
+            <div class="penjelasan">
+              <input type="checkbox" id="p-mtk2">
+              <label for="p-mtk2"><h4>Lu'lu Insan Cemerlang</h4>
+                <div style="text-align: center;">
+                    <img src="lulumtk.jpeg"
+                    alt="Poster Iklan"
+                    width="60%"
+                    height="130%">
+                </div>
+                <small>Klik untuk membuka</small></label>
+                <p>
+                    1. Pemisalan Variabel <br>
+                        - x = harga satu Keylight <br>
+                        - y = harga satu Reglow Tree<br>
+                </p>
+                <p>
+                    2. Membuat model matematika <br>
+                    - Paket 1: 2 Keylight dan 3 Reglow Tree = Rp275.000 <br>
+                    - Paket 2: 3 Keylight dan 1 Reglow Tree = Rp185.000 <br>
+                        Maka diperoleh: <br>
+                        2x + 3y = 275.000 (1) <br>
+                        3x + y = 185.000 (2) <br>
+                </p>
+                <p>
+                    3. Menentukan harga masing-masing produk dengan metode campuran <br><br>
+                        a. Eliminasi y <br>
+                            2x + 3y = 275.000 |×1| <br>
+                            3x + y = 185.000 |×3| <br>
+                            9x + 3y = 550.000 <br>
+                            2x + 3y = 275.000 <br>
+                            ___________________ - <br>
+                            7x = 280.000 <br>
+                            x = 280.000 : 7 = 40.000 <br><br>
+
+                        b. Substitusi <br>
+                            x = 40.000 (masuk ke persamaan 1) <br>
+                            3x + y = 185.000 <br>
+                            3(40.000) + y = 185.000 <br>
+                            120.000 + y = 185.000 <br>
+                            y = 185.000 - 120.000 <br>
+                            y = 65.000 <br>
+                            x = 65.000 <br>
+                </p>
+                <p>
+                    4. Kesimpulan <br>
+                        - Harga 1 Keylight = Rp40.000 <br>
+                        - Harga 1 Reglow Tree = Rp65.000 <br>
+                </p>
+            </div>
+
+            <div class="penjelasan">
+              <input type="checkbox" id="p-mtk3">
+              <label for="p-mtk3"><h4>Mahsusotul Birroh</h4>
+                <div style="text-align: center;">
+                    <img src="birrohmtk.jpeg"
+                    alt="Poster Iklan"
+                    width="60%"
+                    height="100%">  
+                </div>
+                <small>Klik untuk membuka</small></label>
+                <p>
+                    1. Pemisalan Variabel <br>
+                        - x = harga satu CD Clock <br>
+                        - y = harga satu dari Lotus Lamp <br>
+                </p>
+                <p>
+                    2. Membuat model matematika <br>
+                        - Paket 1: 3 CD Clock dan 5 Lotus Lamp Rp350.000 <br>
+                        - Paket 2: 5 CD Clock dan 3 Lotus Lamp Rp450.000 <br>
+                        Maka diperoleh: <br>
+                        3x + 5y = 350.000 (1) <br>
+                        5x + 3y = 450.000 (2) <br>
+                </p>
+                <p>
+                    3. Menentukan harga masing-masing produk dengan metode campuran <br><br>
+                        a. Eliminasi y <br>
+                            3x + 5y = 350.000 |×3| <br>
+                            5x + 3y = 450.000 |×5| <br>
+                            9x + 15y = 1.050.000  <br>
+                            25x + 15y = 2.250.000  <br>
+                            _______________________ - <br>
+                            -16x = -1.200.000 <br>
+                            16x = 1.200.000 <br>
+                            x = 1.200.000 : 16 = 75.000 <br><br>
+
+                        b. Substitusi <br>
+                            x = 75.000 (masuk ke persamaan 1) <br>
+                            3x + 5y = 350.000 <br>
+                            3(75.000) + 5y = 350.000 <br>
+                            225.000 + 5y = 350.000 <br>
+                            5y = 350.000 - 225.000 <br>
+                            5y = 125.000 <br>
+                            y = 125.000 : 5 = 25.000<br>
+                </p>
+                <p>
+                    4. Kesimpulan <br>
+                        - Harga 1 CD Clock = Rp75.000 <br>
+                        - Harga 1 Lotus Lamp = Rp25.000 <br>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Bahasa Inggris -->
+        <div class="mapel-isi" id="isi-ing">
+            <h3>Bahasa Inggris</h3>
+            <div class="penjelasan-wrap">
+                <div class="penjelasan">
+                    <input type="checkbox" id="p-ing1">
+                    <label for="p-ing1"><h4>Andika Surya Pratama</h4>
+                    <small>Klik untuk membuka</small></label>
+                    <p>How an Old Computer Fan Is Transformed into a Smart Mini Fan
+
+                       <p> General Statement <br>
+                        
+                        Electronic waste is one of the environmental problems caused by the development of technology. Old computer components are often thrown away when they are no longer used. However, some components can still be reused, such as computer cooling fans. One creative way to reduce electronic waste is by transforming an old computer fan into a Smart Mini Fan. This project applies the 3R principle, especially Reuse and Recycle.</p>
+                        
+                        <p> The Transformation Process <br>
+                        
+                        The transformation begins by preparing an old computer cooling fan and other necessary materials. The materials include a box, a DC adapter, an ON/OFF switch, screws, cables, and a fan protector. The computer fan is checked to make sure it is still in good condition. After that, the fan is placed on the box as the main frame of the product.</p>
+                        
+                        <p> The Formation of a New Product <br>
+                        
+                        After the fan is positioned, the other components are arranged according to the design. The ON/OFF switch is used to control the fan, while the DC adapter provides the electrical power. The cables and connections are arranged neatly, and the fan protector is installed. The product is then checked and tested under proper supervision to ensure that it works safely.</p>
+                        
+                       <p> The Result and Its Impact <br>
+                        
+                        As a result, an unused computer cooling fan is transformed into a Smart Mini Fan that can produce airflow for small areas, such as study desks or workspaces. This product gives old computer components a new function and reduces electronic waste. Therefore, transforming unused computer components into useful products is a creative way to support environmental sustainability.</p>
+                </div>         
+            
+                <div class="penjelasan">
+                    <input type="checkbox" id="p-ing2">
+                    <label for="p-ing2"><h4>Lu'lu Insan Cemerlang</h4><small>Klik untuk membuka</small></label>
+                    <p>How a CPU Cooling Fan Is Transformed into a Personal Fan
+
+                      <p> General Statement <br>
+                        
+                        The development of technology causes an increasing amount of unused electronic components and electronic waste. One example is a computer cooling fan (CPU fan), which is usually used to cool computer components. However, the fan can still be reused and transformed into a useful product. One creative innovation is turning an old CPU cooling fan into a personal fan. This fan is designed to produce airflow directly toward the user to provide a cooling effect.</p>
+                        
+                        <p>The Transformation Process <br>
+                        
+                        The process begins by preparing a computer cooling fan (CPU casing fan) and other supporting materials. The fan is connected to an electrical cable that matches its specifications and uses a DC adapter, usually 12V, as its power source. Next, an ON/OFF switch is installed to control the fan. A DC socket is used to connect the fan to the adapter. The connecting cables are arranged neatly, and the electrical connections are protected with electrical insulation.</p>
+                        
+                        <p> The Formation of a New Product
+                        
+                        After preparing the electrical components, the fan is attached to a suitable stand using bolts and nuts to keep it stable. The ON/OFF switch is placed in an easily accessible position. Then, a protective fan cover is installed to prevent users from touching the rotating blades. All components are assembled into one unit to create a practical personal fan. This fan is designed to be placed on a desk and directed straight toward the user.</p>
+                        
+                        <p> The Result and Its Impact <br>
+                        
+                        As a result, an old computer cooling fan is transformed into a personal fan. This fan produces airflow directly toward the user instead of circulating air throughout the room. With the ON/OFF switch, users can easily turn the fan on and off. Besides creating a useful product, this innovation also helps reduce electronic waste and reuse old computer components. Therefore, transforming an old CPU cooling fan into a personal fan is a creative way to recycle electronic components.</p>
+                    </p>
+                </div>
+                <div class="penjelasan">
+                    <input type="checkbox" id="p-ing3">
+                    <label for="p-ing3"><h4>Mahsusotul Birroh</h4><small>Klik untuk membuka</small></label>
+                    <p> How an Old CPU Waste Is Transformed into a Functional Fan
+
+                        <p> General Statements
+                        
+                        Electronic waste is one of the environmental problems caused by the rapid development of technology. Old CPUs often become unused or damaged and are eventually thrown away. However, some components inside the CPU can still be reused to create innovative products. One creative way to reduce electronic waste is by transforming an unused computer cooling fan into a practical desk fan. This project trains creativity, technological skills, and teamwork, showing how electronic waste can be turned into a useful. safe. and
+                        environmentally friendly product.</p>
+                        
+                        <p>The Transformation Process
+                        
+                        The transformation begins by preparing the tools and materials, such as a computer cooling fan, a 12V DC adapter, an ON/OFF switch, a DC socket, nuts, bolts, and connecting cables. The design is determined, and the component positions are measured on the box. Holes are made for the fan, ON/OFF switch, and DC socket. The components are then securely placed, tightened, and assembled into the box to create the basic structure of the fan.</p>
+                        
+                        <p> The Formation of a New Product
+                        
+                        The cooling fan and electrical components are properly connected according to their wire polarity. The ON/OFF switch is integrated into the circuit to control the power supply from the 12V adapter manually. To ensure user safety, a protective fan guard is installed so fingers do not touch the spinning blades, and electrical insulation is applied to all joints.</p>
+                        
+                        <p> The Result and Its Impact
+                        
+                        As a result, an unused CPU fan is successfully transformed into a practical and beneficial manual smart fan. Users can easily turn the fan on or off using the switch whenever needed. This innovation successfully applies the 3R principles (Reduce, Reuse, Recycle), reduces electronic waste, ensures electrical safety, and contributes to a more sustainable and greener future.</p>
+                     </p>
+                    
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Kami Section -->
+    <section id="produk">
+        <div class="judul">
+            <h2>Produk Kami</h2>
+            <p>Hasil karya daur ulang — klik kotak produk</p>
+        </div>
+        <div class="container">
+            <button class="product">
+                <div>
+                    <img src="kipas.jpeg" alt="Kipas Angin Smart"
+                    width="150"
+                    height="100">
+                </div>
+                <nav class="produk">
+                <a href="produk1.html">Kipas Angin Smart</a>
+                </nav>
+            </button>
+
+            <button class="product">
+                <div>
+                    <img src="pot.jpeg" alt="Pot Galon Tanaman"
+                    width="150"
+                    height="100">
+                </div>
+                <nav class="produk">
+               <a href="produk2.html"> Pot Tanaman dari Galon </a>
+               </nav>
+            </button>
+
+            <button class="product">
+                <div><img src="tempat.jpeg" alt="Tempat Pensil"
+                width="150"
+                height="100">
+                </div>
+                <nav class="produk">
+               <a href="produk3.html"> Tempat Pensil dari Kaleng</a>
+               </nav>
+            </button>
+
+            <button class="product">
+                <div>
+                    <img src="celengan.jpeg" alt="Celengan"
+                    width="150"
+                    height="100">
+                </div>
+                <nav class="produk">
+               <a href="produk4.html"> Celengan dari Botol</a>
+               </nav>
+            </button>
+
+            <button class="product">
+                <div>
+                    <img src="lampu.jpeg" alt="Lampu Hias"
+                    width="150"
+                    height="100">
+                </div>
+                <nav class="produk">
+                <a href="produk5.html"> Lampu hias dari Botol Kaca</a>
+                </nav>
+            </button>
+
+            <button class="product">
+                <div><img src="rak.jpeg" alt="Rak Serbaguna"
+                width="150"
+                height="100">
+                </div>
+                <nav class="produk">
+                <a href="produk6.html"> Rak Serbaguna dari Kardus</a>
+                </nav>
+            </button>
+        </div>
+    </section>
+
+    <!-- Anggota Tim Section -->
+    <section id="anggota">
+        <div class="judul">
+            <h2>Anggota Tim</h2>
+            <p>Kelompok EcoCycle-Smart — klik kartu anggota</p>
+        </div>
+        <div class="container">
+            <button class="card member">
+                <img src="dika.jpeg" alt="Andika">
+                <h3>Andika Surya Pratama (03)</h3>
+                <p>X PPLG 4</p>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/kazuchi186?vrfl=d2dxeGRjcXRraGk4" target="_blank" class="sosmed-item ig">
+                    <i class="fab fa-instagram"></i> <span>: @kazuchi186</span><br>
+                    </a>
+                    <a href="https://wa.me/62881010444750" target="_blank" class="sosmed-item whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span>: +62 881-0104-44750</span><br>
+                    </a>
+            </button>
+
+            <button class="card member">
+                <img src="lulu.jpeg" alt="Lu'lu">
+                <h3>Lu'lu Insan Cemerlang (21)
+                </h3>
+                <p>X PPLG 4</p>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/lulucemerlang?rpxt=Z2dsajI0c3NicTJm" target="_blank" class="sosmed-item ig">
+                    <i class="fab fa-instagram"></i> <span>: @lulucemerlang</span><br>
+                    </a>
+                    <a href="https://wa.me/628217748440?s=t" target="_blank" class="sosmed-item whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span>: +62 821-7748-440</span><br>
+                    </a>
+            </button>
+
+            <button class="card member">
+                <img src="birroh.jpeg" alt="Birroh">
+                <h3>Mahsusotul Birroh (23)</h3>
+                <p>X PPLG 4</p>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/kybrhsrh?utm_source=qr&exln=MWozOXk1M2Y5ODhncw==" target="_blank" class="sosmed-item ig">
+                    <i class="fab fa-instagram"></i> <span>: @kybrrh</span><br>
+                    </a>
+                    <a href="https://wa.me/qr/P2U3LLMN2DL5N1" target="_blank" class="sosmed-item whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span>: +62 838-3683-3841</span><br>
+                    </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- Kontak Kami Section -->
+    <section id="kontak">
+        <div class="judul">
+            <h2>Kontak Kami</h2>
+            <p>Hubungi dan kirim pesan kepada kami</p>
+        </div>
+        <div class="container">
+            <div class="contact-box">
+                <h3>Kirim Pesan</h3>
+                <form onsubmit="kirimPesan(event)">
+                    <input type="text" placeholder="Nama Kamu" required>
+                    <input type="email" placeholder="Email Kamu" required>
+                    <textarea rows="5" placeholder="Pesan Kamu" required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+
+            <div class="contact-box">
+                <h3>Hubungi Kami &#9742;</h3>
+                <p>Alamat: Jl. Darun Na'im, Karangduren, kec. Tengaran, Kabupaten Semarang, Jawa Tengah 50775</p>
+                <p>&#9993; Email: <a href="mailto:mahsusotul.p26089@satamail.my.id">mahsusotul.p26089@satamail.my.id </a> </p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/qr/P2U3LLMN2DL5N1" target="_blank">+62 838-3683-3841</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+    
+            <div class="footer-section">
+                <h2>My Website</h2>
+                <p>
+                    Selamat datang di website kami.
+                    Temukan informasi dan layanan menarik di sini.
+                </p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#beranda">&#127968;Beranda</a></li>
+                    <li><a href="#tentang">&#8505;Tentang</a></li>
+                    <li><a href="#materi">&#128218;materi</a></li>
+                    <li><a href="#produk">&#128230;Produk</a></li>
+                    <li><a href="#anggota">&#128101;Anggota</a></li>
+                    <li><a href="#kontak">&#9742;Kontak</a></li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
